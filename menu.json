@@ -5,7 +5,7 @@
     "prezzo": 10.0,
     "descrizione": "",
     "allergeni": "Nessuno",
-    "immagine": "uploads_foto\\RICKY BONS CATERING 19 (3).jpg"
+    "immagine": "uploads_foto\\vino al calice.jpg"
   },
   {
     "nome": "BUFFET DI BEN VENUTO",
@@ -20,8 +20,8 @@
     "categoria": "ANTIPASTI",
     "prezzo": 10.0,
     "descrizione": "",
-    "allergeni": "Pesce, Soia, Crostacei, Glutine, Semi di sesamo, Anidride solforosa e solfiti, Molluschi, Arachidi, Uova",
-    "immagine": "uploads_foto\\RICKY BONS CATERING 11.jpg"
+    "allergeni": "Pesce, Molluschi",
+    "immagine": "uploads_foto\\crudi di mare.jpg"
   },
   {
     "nome": "ISOLA DEL SUSHI",
