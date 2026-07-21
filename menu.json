@@ -5,7 +5,7 @@
     "prezzo": 10.0,
     "descrizione": "",
     "allergeni": "Nessuno",
-    "immagine": "uploads_foto\\vino al calice.jpg"
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/vino al calice.jpg"
   },
   {
     "nome": "BUFFET DI BEN VENUTO",
@@ -13,7 +13,7 @@
     "prezzo": 20.0,
     "descrizione": "",
     "allergeni": "Uova, Sedano, Glutine, Latte",
-    "immagine": "uploads_foto\\IMG_20190718_213548.jpg"
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/IMG_20190718_213548.jpg"
   },
   {
     "nome": "CAPRESE DI BUFALA",
@@ -21,7 +21,7 @@
     "prezzo": 15.0,
     "descrizione": "",
     "allergeni": "Latte",
-    "immagine": "uploads_foto\\249.jpg"
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/249.jpg"
   },
   {
     "nome": "ISOLA DEI FRUTTI DI MARE",
@@ -29,7 +29,7 @@
     "prezzo": 10.0,
     "descrizione": "",
     "allergeni": "Pesce, Molluschi",
-    "immagine": "uploads_foto\\crudi di mare.jpg"
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/crudi di mare.jpg"
   },
   {
     "nome": "ISOLA DEL SUSHI",
@@ -37,7 +37,7 @@
     "prezzo": 10.0,
     "descrizione": "",
     "allergeni": "Pesce, Soia, Crostacei, Glutine, Semi di sesamo, Anidride solforosa e solfiti, Molluschi, Arachidi, Uova",
-    "immagine": "uploads_foto\\WhatsApp Image 2026-04-21 at 10.27.09 (5).jpeg"
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/WhatsApp Image 2026-04-21 at 10.27.09 (5).jpeg"
   },
   {
     "nome": "SPAGHETTI AI RICCI DI MARE",
@@ -45,6 +45,14 @@
     "prezzo": 25.0,
     "descrizione": "",
     "allergeni": "Pesce",
-    "immagine": "uploads_foto\\282.jpg"
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/282.jpg"
+  },
+  {
+    "nome": "SPAGHETTI AI RICCI DI MARE",
+    "categoria": "PRIMI",
+    "prezzo": 25.0,
+    "descrizione": "",
+    "allergeni": "Pesce",
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/282.jpg"
   }
 ]
