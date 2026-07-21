@@ -38,21 +38,5 @@
     "descrizione": "",
     "allergeni": "Pesce, Soia, Crostacei, Glutine, Semi di sesamo, Anidride solforosa e solfiti, Molluschi, Arachidi, Uova",
     "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/WhatsApp Image 2026-04-21 at 10.27.09 (5).jpeg"
-  },
-  {
-    "nome": "SPAGHETTI AI RICCI DI MARE",
-    "categoria": "PRIMI",
-    "prezzo": 25.0,
-    "descrizione": "",
-    "allergeni": "Pesce",
-    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/282.jpg"
-  },
-  {
-    "nome": "SPAGHETTI AI RICCI DI MARE",
-    "categoria": "PRIMI",
-    "prezzo": 25.0,
-    "descrizione": "",
-    "allergeni": "Pesce",
-    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/282.jpg"
   }
 ]
