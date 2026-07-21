@@ -1,0 +1,30 @@
+[
+  {
+    "nome": "AREA ENOTECA",
+    "categoria": "ANTIPASTI",
+    "prezzo": 10.0,
+    "descrizione": "",
+    "allergeni": "Pesce, Soia, Crostacei, Glutine, Semi di sesamo, Anidride solforosa e solfiti, Molluschi, Arachidi, Uova"
+  },
+  {
+    "nome": "BUFFET DI BEN VENUTO",
+    "categoria": "ANTIPASTI",
+    "prezzo": 20.0,
+    "descrizione": "",
+    "allergeni": "Uova, Sedano, Glutine, Latte"
+  },
+  {
+    "nome": "ISOLA DEI FRUTTI DI MARE",
+    "categoria": "ANTIPASTI",
+    "prezzo": 10.0,
+    "descrizione": "",
+    "allergeni": "Pesce, Soia, Crostacei, Glutine, Semi di sesamo, Anidride solforosa e solfiti, Molluschi, Arachidi, Uova"
+  },
+  {
+    "nome": "ISOLA DEL SUSHI",
+    "categoria": "ANTIPASTI",
+    "prezzo": 10.0,
+    "descrizione": "",
+    "allergeni": "Pesce, Soia, Crostacei, Glutine, Semi di sesamo, Anidride solforosa e solfiti, Molluschi, Arachidi, Uova"
+  }
+]
