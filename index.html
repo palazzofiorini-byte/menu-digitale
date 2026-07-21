@@ -17,19 +17,20 @@
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); padding-bottom: 40px; }
-        .header { background-color: var(--primary); color: #ffffff; text-align: center; padding: 30px 20px; border-bottom: 4px solid var(--accent); }
-        .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 5px; text-transform: uppercase; }
+        .header { background-color: var(--primary); color: #ffffff; text-align: center; padding: 25px 20px; border-bottom: 4px solid var(--accent); }
+        .header h1 { font-size: 24px; font-weight: 700; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
         .header p { color: var(--accent); font-size: 14px; font-style: italic; }
         .container { max-width: 600px; margin: 20px auto 0; padding: 0 15px; }
-        .category-card { background-color: var(--card-bg); border-radius: 12px; padding: 20px; margin-bottom: 20px; border: 1px solid #e2e8f0; }
+        .category-card { background-color: var(--card-bg); border-radius: 12px; padding: 20px; margin-bottom: 20px; border: 1px solid #e2e8f0; box-shadow: 0 2px 6px rgba(0,0,0,0.04); }
         .category-title { font-size: 18px; font-weight: 700; color: var(--primary); text-transform: uppercase; border-bottom: 2px solid var(--accent); padding-bottom: 8px; margin-bottom: 16px; }
         .dish-item { padding: 12px 0; border-bottom: 1px dashed #e2e8f0; }
         .dish-item:last-child { border-bottom: none; }
-        .dish-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .dish-header { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
         .dish-name { font-size: 16px; font-weight: 600; }
-        .dish-price { font-size: 16px; font-weight: 700; color: var(--price); }
+        .dish-price { font-size: 16px; font-weight: 700; color: var(--price); white-space: nowrap; }
         .dish-desc { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
         .dish-allergens { font-size: 11px; color: var(--allergen); font-weight: 600; margin-top: 4px; }
+        .loading { text-align: center; padding: 40px; color: var(--text-muted); font-size: 16px; }
         .footer { text-align: center; font-size: 12px; color: var(--text-muted); margin-top: 30px; }
     </style>
 </head>
@@ -40,38 +41,8 @@
         <p>Menu Ristorante & Specialità</p>
     </div>
 
-    <div class="container">
-        <div class="category-card">
-            <h2 class="category-title">Antipasti</h2>
-            <div class="dish-item">
-                <div class="dish-header">
-                    <span class="dish-name">Antipasto della Casa</span>
-                    <span class="dish-price">€ 14,00</span>
-                </div>
-                <div class="dish-desc">Selezione di salumi, formaggi tipici locali e conserve artigianali.</div>
-                <div class="dish-allergens">⚠️ Allergene: Latte</div>
-            </div>
-            <div class="dish-item">
-                <div class="dish-header">
-                    <span class="dish-name">Caponata Tradizionale</span>
-                    <span class="dish-price">€ 9,00</span>
-                </div>
-                <div class="dish-desc">Melanzane, sedano, olive, capperi in salsa agrodolce.</div>
-                <div class="dish-allergens">⚠️ Allergene: Sedano</div>
-            </div>
-        </div>
-
-        <div class="category-card">
-            <h2 class="category-title">Primi Piatti</h2>
-            <div class="dish-item">
-                <div class="dish-header">
-                    <span class="dish-name">Spaghetti alla Norma</span>
-                    <span class="dish-price">€ 12,00</span>
-                </div>
-                <div class="dish-desc">Salsa di pomodoro, melanzane fritte, ricotta salata e basilico.</div>
-                <div class="dish-allergens">⚠️ Allergeni: Glutine, Latte</div>
-            </div>
-        </div>
+    <div class="container" id="menu-container">
+        <div class="loading">Caricamento del menu in corso...</div>
     </div>
 
     <div class="footer">
@@ -79,5 +50,49 @@
         <p>© Palazzo Fiorini — Tutti i diritti riservati</p>
     </div>
 
+    <script>
+        // Carica il file menu.json salvato automaticamente dal gestionale
+        fetch('menu.json?v=' + new Date().getTime())
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('menu-container');
+                container.innerHTML = '';
+
+                // Raggruppa i piatti per categoria
+                const categorie = {};
+                data.forEach(piatto => {
+                    const cat = piatto.categoria || 'Altro';
+                    if (!categorie[cat]) categorie[cat] = [];
+                    categorie[cat].push(piatto);
+                });
+
+                // Genera le sezioni nell'HTML
+                for (const [categoria, piatti] of Object.entries(categorie)) {
+                    let html = `<div class="category-card"><h2 class="category-title">${categoria}</h2>`;
+                    piatti.forEach(p => {
+                        const prezzo = typeof p.prezzo === 'number' ? `€ ${p.prezzo.toFixed(2)}` : p.prezzo;
+                        html += `
+                            <div class="dish-item">
+                                <div class="dish-header">
+                                    <span class="dish-name">${p.nome}</span>
+                                    <span class="dish-price">${prezzo}</span>
+                                </div>
+                                ${p.descrizione ? `<div class="dish-desc">${p.descrizione}</div>` : ''}
+                                ${p.allergeni ? `<div class="dish-allergens">⚠️ Allergeni: ${p.allergeni}</div>` : ''}
+                            </div>
+                        `;
+                    });
+                    html += `</div>`;
+                    container.innerHTML += html;
+                }
+            })
+            .catch(error => {
+                console.error('Errore nel caricamento del menu:', error);
+                document.getElementById('menu-container').innerHTML = 
+                    '<div class="loading">Menu momentaneamente non disponibile. Chiedere al personale.</div>';
+            });
+    </script>
+</body>
+</html>
 </body>
 </html>
