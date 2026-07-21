@@ -1,42 +1,10 @@
 [
   {
-    "nome": "AREA ENOTECA",
-    "categoria": "ANTIPASTI",
-    "prezzo": 10.0,
-    "descrizione": "",
-    "allergeni": "Nessuno",
-    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/vino al calice.jpg"
-  },
-  {
-    "nome": "BUFFET DI BEN VENUTO",
-    "categoria": "ANTIPASTI",
-    "prezzo": 20.0,
-    "descrizione": "",
-    "allergeni": "Uova, Sedano, Glutine, Latte",
-    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/IMG_20190718_213548.jpg"
-  },
-  {
     "nome": "CAPRESE DI BUFALA",
     "categoria": "ANTIPASTI",
     "prezzo": 15.0,
     "descrizione": "",
     "allergeni": "Latte",
     "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/249.jpg"
-  },
-  {
-    "nome": "ISOLA DEI FRUTTI DI MARE",
-    "categoria": "ANTIPASTI",
-    "prezzo": 10.0,
-    "descrizione": "",
-    "allergeni": "Pesce, Molluschi",
-    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/crudi di mare.jpg"
-  },
-  {
-    "nome": "ISOLA DEL SUSHI",
-    "categoria": "ANTIPASTI",
-    "prezzo": 10.0,
-    "descrizione": "",
-    "allergeni": "Pesce, Soia, Crostacei, Glutine, Semi di sesamo, Anidride solforosa e solfiti, Molluschi, Arachidi, Uova",
-    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/WhatsApp Image 2026-04-21 at 10.27.09 (5).jpeg"
   }
 ]
