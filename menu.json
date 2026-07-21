@@ -4,69 +4,31 @@
     "categoria": "ANTIPASTI",
     "prezzo": 10.0,
     "descrizione": "",
-    "allergeni": "Pesce, Soia, Crostacei, Glutine, Semi di sesamo, Anidride solforosa e solfiti, Molluschi, Arachidi, Uova"
+    "allergeni": "Pesce, Soia, Crostacei, Glutine, Semi di sesamo, Anidride solforosa e solfiti, Molluschi, Arachidi, Uova",
+    "immagine": "uploads_foto\\RICKY BONS CATERING 19 (3).jpg"
   },
   {
     "nome": "BUFFET DI BEN VENUTO",
     "categoria": "ANTIPASTI",
     "prezzo": 20.0,
     "descrizione": "",
-    "allergeni": "Uova, Sedano, Glutine, Latte"
-  },
-  {
-    "nome": "CAPRESE DI BUFALA",
-    "categoria": "ANTIPASTI",
-    "prezzo": 15.0,
-    "descrizione": "",
-    "allergeni": "Latte"
-  },
-  {
-    "nome": "CAPRESE DI BUFALA",
-    "categoria": "ANTIPASTI",
-    "prezzo": 15.0,
-    "descrizione": "",
-    "allergeni": "Latte"
-  },
-  {
-    "nome": "CAPRESE DI BUFALA",
-    "categoria": "ANTIPASTI",
-    "prezzo": 15.0,
-    "descrizione": "",
-    "allergeni": "Latte"
-  },
-  {
-    "nome": "CAPRESE DI BUFALA",
-    "categoria": "ANTIPASTI",
-    "prezzo": 15.0,
-    "descrizione": "",
-    "allergeni": "Latte"
-  },
-  {
-    "nome": "CAPRESE DI BUFALA",
-    "categoria": "ANTIPASTI",
-    "prezzo": 15.0,
-    "descrizione": "",
-    "allergeni": "Latte"
-  },
-  {
-    "nome": "CAPRESE DI BUFALA",
-    "categoria": "ANTIPASTI",
-    "prezzo": 15.0,
-    "descrizione": "",
-    "allergeni": "Latte"
+    "allergeni": "Uova, Sedano, Glutine, Latte",
+    "immagine": "uploads_foto\\IMG_20190718_213548.jpg"
   },
   {
     "nome": "ISOLA DEI FRUTTI DI MARE",
     "categoria": "ANTIPASTI",
     "prezzo": 10.0,
     "descrizione": "",
-    "allergeni": "Pesce, Soia, Crostacei, Glutine, Semi di sesamo, Anidride solforosa e solfiti, Molluschi, Arachidi, Uova"
+    "allergeni": "Pesce, Soia, Crostacei, Glutine, Semi di sesamo, Anidride solforosa e solfiti, Molluschi, Arachidi, Uova",
+    "immagine": "uploads_foto\\RICKY BONS CATERING 11.jpg"
   },
   {
     "nome": "ISOLA DEL SUSHI",
     "categoria": "ANTIPASTI",
     "prezzo": 10.0,
     "descrizione": "",
-    "allergeni": "Pesce, Soia, Crostacei, Glutine, Semi di sesamo, Anidride solforosa e solfiti, Molluschi, Arachidi, Uova"
+    "allergeni": "Pesce, Soia, Crostacei, Glutine, Semi di sesamo, Anidride solforosa e solfiti, Molluschi, Arachidi, Uova",
+    "immagine": "uploads_foto\\WhatsApp Image 2026-04-21 at 10.27.09 (5).jpeg"
   }
 ]
