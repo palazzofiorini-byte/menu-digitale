@@ -16,6 +16,14 @@
     "immagine": "uploads_foto\\IMG_20190718_213548.jpg"
   },
   {
+    "nome": "CAPRESE DI BUFALA",
+    "categoria": "ANTIPASTI",
+    "prezzo": 15.0,
+    "descrizione": "",
+    "allergeni": "Latte",
+    "immagine": "uploads_foto\\249.jpg"
+  },
+  {
     "nome": "ISOLA DEI FRUTTI DI MARE",
     "categoria": "ANTIPASTI",
     "prezzo": 10.0,
