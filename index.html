@@ -32,17 +32,17 @@
             font-size: 1.8rem;
         }
 
-        /* --- NAVIGAZIONE A PULSANTI CATEGORIE --- */
+        /* BARRA DEI PULSANTI CATEGORIA */
         .categories-container {
             display: flex;
             gap: 8px;
             overflow-x: auto;
             padding: 10px 5px;
             margin-bottom: 15px;
-            scrollbar-width: none; /* Firefox */
+            scrollbar-width: none;
         }
         .categories-container::-webkit-scrollbar {
-            display: none; /* Chrome / Safari */
+            display: none;
         }
 
         .cat-btn {
@@ -64,7 +64,7 @@
             box-shadow: 0 2px 6px rgba(211, 84, 0, 0.4);
         }
 
-        /* --- GRIGLIA / LISTA PIATTI --- */
+        /* LISTA E SCHEDE PIATTI */
         .menu-list {
             display: flex;
             flex-direction: column;
@@ -140,12 +140,12 @@
         <p style="margin: 5px 0 0 0; color: #666; font-size: 0.9rem;">Menu Digitale</p>
     </header>
 
-    <!-- Barra dei pulsanti Categorie -->
+    <!-- Barra Categorie -->
     <div class="categories-container" id="category-buttons">
         <button class="cat-btn active" onclick="filterCategory('Tutti', this)">Tutti</button>
     </div>
 
-    <!-- Contenitore Lista Piatti -->
+    <!-- Lista Piatti -->
     <div class="menu-list" id="menu-container">
         <p class="empty-msg">Caricamento menu in corso...</p>
     </div>
@@ -153,9 +153,9 @@
     <script>
         let tuttiIPiatti = [];
 
-        // Carica i dati dal file menu.json salvato da Streamlit
         async function loadMenu() {
             try {
+                // Aggiunge un timestamp per evitare problemi di cache sul telefono del cliente
                 const response = await fetch('menu.json?v=' + new Date().getTime());
                 if (!response.ok) throw new Error('Impossibile caricare menu.json');
                 
@@ -170,11 +170,8 @@
             }
         }
 
-        // Genera i pulsanti delle categorie in modo dinamico
         function generaPulsantiCategorie() {
             const container = document.getElementById('category-buttons');
-            
-            // Estrae tutte le categorie uniche
             const categorie = [...new Set(tuttiIPiatti.map(p => p.categoria || 'Altro'))];
 
             let htmlButtons = `<button class="cat-btn active" onclick="filterCategory('Tutti', this)">Tutti</button>`;
@@ -186,9 +183,7 @@
             container.innerHTML = htmlButtons;
         }
 
-        // Filtra i piatti in base alla categoria cliccata
         function filterCategory(categoria, btnElement) {
-            // Aggiorna lo stato dei pulsanti (colore attivo)
             document.querySelectorAll('.cat-btn').forEach(btn => btn.classList.remove('active'));
             btnElement.classList.add('active');
 
@@ -200,7 +195,6 @@
             }
         }
 
-        // Mostra a schermo le schede dei piatti
         function renderMenu(piatti) {
             const container = document.getElementById('menu-container');
             
@@ -211,8 +205,8 @@
 
             let html = '';
             piatti.forEach(p => {
-                // Se c'è l'immagine in Base64 usa quella, altrimenti usa un placeholder neutro
-                const imgSrc = p.immagine && p.immagine.trim() !== '' 
+                // Usa l'URL caricato su GitHub Pages, altrimenti usa un'icona placeholder
+                const imgSrc = (p.immagine && p.immagine.trim() !== '') 
                     ? p.immagine 
                     : 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="%23ccc"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.55 3.89 3.5 4.16V22h2.99v-8.84C11.45 12.89 13 11.12 13 9V2h-2v7zm8-7h-2v20h2V12h2V2h-2z"/></svg>';
 
@@ -220,7 +214,7 @@
 
                 html += `
                     <div class="piatto-card">
-                        <img src="${imgSrc}" class="piatto-img" alt="${p.nome}">
+                        <img src="${imgSrc}" class="piatto-img" alt="${p.nome}" loading="lazy">
                         <div class="piatto-info">
                             <div class="piatto-header">
                                 <h3 class="piatto-nome">${p.nome}</h3>
@@ -235,7 +229,6 @@
             container.innerHTML = html;
         }
 
-        // Avvia il caricamento
         loadMenu();
     </script>
 </body>
