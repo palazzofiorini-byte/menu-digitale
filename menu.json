@@ -32,6 +32,14 @@
     "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/267.jpg"
   },
   {
+    "nome": "TAGLIERE DI SALUMI E FORMAGGI",
+    "categoria": "ANTIPASTI E STUZZICHERIA",
+    "prezzo": 18.0,
+    "descrizione": "",
+    "allergeni": "Nessuno",
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/tagliere.jpg"
+  },
+  {
     "nome": "MARGARITA",
     "categoria": "BAR & COKTAILS",
     "prezzo": 9.0,
