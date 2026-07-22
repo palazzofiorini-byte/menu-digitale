@@ -8,14 +8,6 @@
     "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/249.jpg"
   },
   {
-    "nome": "MOJTO",
-    "categoria": "BAR & COKTAILS",
-    "prezzo": 9.0,
-    "descrizione": "",
-    "allergeni": "Nessuno",
-    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/mojito.jpg"
-  },
-  {
     "nome": "SPAGHETTI AI RICCI",
     "categoria": "PRIMI",
     "prezzo": 22.0,
@@ -30,5 +22,13 @@
     "descrizione": "",
     "allergeni": "Molluschi",
     "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/283.jpg"
+  },
+  {
+    "nome": "GRIGLIATA MISTA ALLA SICILIANA",
+    "categoria": "SECONDI",
+    "prezzo": 25.0,
+    "descrizione": "",
+    "allergeni": "Crostacei, Pesce, Molluschi",
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/245.jpg"
   }
 ]
