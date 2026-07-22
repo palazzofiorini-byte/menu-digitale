@@ -16,6 +16,14 @@
     "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/273.jpg"
   },
   {
+    "nome": "PROSCIUTTO CRUDO E MELONE",
+    "categoria": "ANTIPASTI",
+    "prezzo": 15.0,
+    "descrizione": "",
+    "allergeni": "Nessuno",
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/228.jpg"
+  },
+  {
     "nome": "MOJTO",
     "categoria": "BAR & COKTAILS",
     "prezzo": 9.0,
