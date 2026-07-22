@@ -8,6 +8,14 @@
     "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/249.jpg"
   },
   {
+    "nome": "IMPEPATA DI COZZE",
+    "categoria": "ANTIPASTI",
+    "prezzo": 12.0,
+    "descrizione": "",
+    "allergeni": "Molluschi",
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/273.jpg"
+  },
+  {
     "nome": "MOJTO",
     "categoria": "BAR & COKTAILS",
     "prezzo": 9.0,
