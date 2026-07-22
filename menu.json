@@ -1,7 +1,7 @@
 [
   {
     "nome": "CAPRESE DI BUFALA",
-    "categoria": "ANTIPASTI",
+    "categoria": "ANTIPASTI E STUZZICHERIA",
     "prezzo": 15.0,
     "descrizione": "",
     "allergeni": "Latte",
@@ -9,7 +9,7 @@
   },
   {
     "nome": "CRUDI DI MARE DEL GIORNO",
-    "categoria": "ANTIPASTI",
+    "categoria": "ANTIPASTI E STUZZICHERIA",
     "prezzo": 35.0,
     "descrizione": "",
     "allergeni": "Crostacei, Pesce, Molluschi",
@@ -17,7 +17,7 @@
   },
   {
     "nome": "IMPEPATA DI COZZE",
-    "categoria": "ANTIPASTI",
+    "categoria": "ANTIPASTI E STUZZICHERIA",
     "prezzo": 12.0,
     "descrizione": "",
     "allergeni": "Molluschi",
@@ -25,11 +25,11 @@
   },
   {
     "nome": "PROSCIUTTO CRUDO E MELONE",
-    "categoria": "ANTIPASTI",
+    "categoria": "ANTIPASTI E STUZZICHERIA",
     "prezzo": 15.0,
     "descrizione": "",
     "allergeni": "Nessuno",
-    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/228.jpg"
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/267.jpg"
   },
   {
     "nome": "MARGARITA",
