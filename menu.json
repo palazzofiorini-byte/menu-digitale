@@ -6,5 +6,29 @@
     "descrizione": "",
     "allergeni": "Latte",
     "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/249.jpg"
+  },
+  {
+    "nome": "SPAGHETTI AI RICCI",
+    "categoria": "PRIMI",
+    "prezzo": 22.0,
+    "descrizione": "",
+    "allergeni": "Pesce, Molluschi",
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/282.jpg"
+  },
+  {
+    "nome": "SPAGHETTI ALLE VONGOLE",
+    "categoria": "PRIMI",
+    "prezzo": 22.0,
+    "descrizione": "",
+    "allergeni": "Molluschi",
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/283.jpg"
+  },
+  {
+    "nome": "GRIGLIATA MISTA DI PESCE",
+    "categoria": "SECONDI",
+    "prezzo": 22.0,
+    "descrizione": "",
+    "allergeni": "Molluschi, Crostacei, Pesce",
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/mojito.jpg"
   }
 ]
