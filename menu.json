@@ -32,6 +32,14 @@
     "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/228.jpg"
   },
   {
+    "nome": "MARGARITA",
+    "categoria": "BAR & COKTAILS",
+    "prezzo": 9.0,
+    "descrizione": "",
+    "allergeni": "Nessuno",
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/margarita.jpg"
+  },
+  {
     "nome": "MOJTO",
     "categoria": "BAR & COKTAILS",
     "prezzo": 9.0,
