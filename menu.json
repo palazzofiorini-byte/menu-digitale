@@ -8,6 +8,14 @@
     "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/249.jpg"
   },
   {
+    "nome": "CRUDI DI MARE DEL GIORNO",
+    "categoria": "ANTIPASTI",
+    "prezzo": 35.0,
+    "descrizione": "",
+    "allergeni": "Crostacei, Pesce, Molluschi",
+    "immagine": "https://palazzofiorini-byte.github.io/menu-digitale/immagini/crudi di mare 4.jpg"
+  },
+  {
     "nome": "IMPEPATA DI COZZE",
     "categoria": "ANTIPASTI",
     "prezzo": 12.0,
